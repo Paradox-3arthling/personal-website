@@ -1,10 +1,10 @@
 <template>
   <v-app>
-    <NavBar appTitle="Floyd's Website"/>
+    <NavBar :appTitle="user_s_name" />
     <v-content>
       <router-view></router-view>
     </v-content>
-    <Footer/>
+    <Footer :user_s_name="user_s_name"/>
   </v-app>
 </template>
 
@@ -17,6 +17,9 @@ export default {
   components: {
     NavBar,
     Footer
-  }
+  },
+  data: () => ({
+    user_s_name: "Paradox-3arthling" // set ur name to be used in SPA
+  })
 };
 </script>
