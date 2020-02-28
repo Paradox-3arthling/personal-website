@@ -4,7 +4,7 @@
             <v-app-bar-nav-icon @click="drawer = true" class="hidden-md-and-up"></v-app-bar-nav-icon>
             <v-spacer class="hidden-md-and-up"/>
 
-            <v-toolbar-title>{{appTitle}} </v-toolbar-title>
+            <v-toolbar-title>{{appTitle}}</v-toolbar-title>
 
             <v-spacer class="hidden-sm-and-down"/>
             <template v-for="(item, index) in items">
