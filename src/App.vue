@@ -21,7 +21,7 @@ export default {
   data: () => ({
     website_title: "Floyd's Portfolio",               // set the name to be displayed in the navigation bar
     footer_name: "Paradox-3arthling",     // set the name to be displayed in the footer
-    nav_n_footer_color: "blue lighten-2" // set the color for the navigation and footer centrally from here
+    nav_n_footer_color: "deep-purple lighten-1" // set the color for the navigation and footer centrally from here
   })
 };
 </script>
