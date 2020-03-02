@@ -1,10 +1,10 @@
 <template>
   <v-app>
-    <NavBar :website_title="website_title" />
+    <NavBar :website_title="website_title" :nav_bar_color="nav_n_footer_color"/>
     <v-content>
       <router-view></router-view>
     </v-content>
-    <Footer :footer_name="footer_name"/>
+    <Footer :footer_name="footer_name" :footer_color="nav_n_footer_color"/>
   </v-app>
 </template>
 
@@ -21,7 +21,7 @@ export default {
   data: () => ({
     website_title: "Floyd",               // set the name to be displayed in the navigation bar
     footer_name: "Paradox-3arthling",     // set the name to be displayed in the footer
-    nav_and_footer_color: "grey darken-3" // set the color for the navigation and footer centrally from here
+    nav_n_footer_color: "grey darken-1" // set the color for the navigation and footer centrally from here
   })
 };
 </script>
