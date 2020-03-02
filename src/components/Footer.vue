@@ -5,7 +5,7 @@
                 <v-col v >
                     <p> &copy;{{ current_year }}. Powered by Vue </p>
                     <!-- <router-link to="/about"> Made by {{ user_s_name }} </router-link> -->
-                    <a href="https://github.com/Paradox-3arthling"> Made by {{ user_s_name }} </a>
+                    <a href="https://github.com/Paradox-3arthling"> Made by {{ footer_name }} </a>
                 </v-col>
             </v-row>
         </v-container>
@@ -18,7 +18,7 @@ export default {
         current_year: (new Date()).getFullYear()
     }),
     props: {
-        user_s_name: String
+        footer_name: String
     }
 }
 </script>

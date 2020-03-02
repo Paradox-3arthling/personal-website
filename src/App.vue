@@ -1,10 +1,10 @@
 <template>
   <v-app>
-    <NavBar :appTitle="website_title" />
+    <NavBar :website_title="website_title" />
     <v-content>
       <router-view></router-view>
     </v-content>
-    <Footer :user_s_name="footer_name"/>
+    <Footer :footer_name="footer_name"/>
   </v-app>
 </template>
 
