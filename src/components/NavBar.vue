@@ -1,6 +1,6 @@
 <template>
     <span>
-        <v-app-bar app dark color="grey darken-3">
+        <v-app-bar app dark :color="nav_bar_color">
             <v-app-bar-nav-icon @click="drawer = true" class="hidden-md-and-up"></v-app-bar-nav-icon>
             <v-spacer class="hidden-md-and-up"/>
 
@@ -36,7 +36,8 @@ export default {
         ]
     }),
     props: {
-        website_title: String
+        website_title: String,
+        nav_bar_color: String
     }
 }
 </script>
