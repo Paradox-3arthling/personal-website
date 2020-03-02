@@ -19,8 +19,9 @@ export default {
     Footer
   },
   data: () => ({
-    website_title: "Floyd",          // set the name to be displayed in the navigation bar
-    footer_name: "Paradox-3arthling" // set the name to be displayed in the footer
+    website_title: "Floyd",               // set the name to be displayed in the navigation bar
+    footer_name: "Paradox-3arthling",     // set the name to be displayed in the footer
+    nav_and_footer_color: "grey darken-3" // set the color for the navigation and footer centrally from here
   })
 };
 </script>
