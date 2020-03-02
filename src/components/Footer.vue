@@ -1,5 +1,5 @@
 <template>
-    <v-footer height="auto" color="grey darken-3" dark>
+    <v-footer height="auto" :color="footer_color" dark>
         <v-container>
             <v-row>
                 <v-col v >
@@ -18,7 +18,8 @@ export default {
         current_year: (new Date()).getFullYear()
     }),
     props: {
-        footer_name: String
+        footer_name: String,
+        footer_color: String
     }
 }
 </script>
