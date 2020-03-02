@@ -12,7 +12,7 @@
             </template>
             <v-spacer class="hidden-sm-and-down"/>
         </v-app-bar> 
-        <v-navigation-drawer app v-model="drawer" disable-resize-watcher temporary class="hidden-md-and-up">
+        <v-navigation-drawer app :color="nav_bar_color" dark v-model="drawer" disable-resize-watcher temporary class="hidden-md-and-up">
             <v-list nav>
                 <template v-for="(item, index) in items">
                     <v-list-item :key="index" v-bind:to="item.href" link>
