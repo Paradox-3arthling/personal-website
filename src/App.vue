@@ -1,10 +1,10 @@
 <template>
   <v-app>
-    <NavBar :appTitle="user_s_name" />
+    <NavBar :appTitle="website_title" />
     <v-content>
       <router-view></router-view>
     </v-content>
-    <Footer :user_s_name="user_s_name"/>
+    <Footer :user_s_name="footer_name"/>
   </v-app>
 </template>
 
@@ -19,7 +19,8 @@ export default {
     Footer
   },
   data: () => ({
-    user_s_name: "Paradox-3arthling" // set ur name to be used in SPA
+    website_title: "Floyd",          // set the name to be displayed in the navigation bar
+    footer_name: "Paradox-3arthling" // set the name to be displayed in the footer
   })
 };
 </script>
